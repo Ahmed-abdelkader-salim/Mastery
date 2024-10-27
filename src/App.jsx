@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react';
-import { BrowserRouter, Routes ,Route,useLocation } from 'react-router-dom';
+import {  Routes ,Route,useLocation } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ScaleLoader } from 'react-spinners'
@@ -31,7 +31,7 @@ const App = () => {
 
   return (
 
-    <BrowserRouter>
+        <>
         {loading ? (
           <div className="spinner-container">
             <ScaleLoader color="#fdc800" height={100} loading={loading} margin={10} />
@@ -49,7 +49,7 @@ const App = () => {
        
           </>
         )}
-        </BrowserRouter>
+        </>
   )
 
 }
